@@ -70,8 +70,8 @@ var SESSION = {
 };
 
 // مُهل زمنية (ms) — معدَّلة v4.1
-var T_SESSION_IDLE    = 60000;  // ← 60 ث (كان 90) → تحرير أسرع للجلسة
-var T_SEARCH_MAX      = 30000;  // ← 30 ث (كان 45) → انتقال أسرع لـ T3_ARAB
+var T_SESSION_IDLE    = 90000;  // ← 60 ث (كان 90) → تحرير أسرع للجلسة
+var T_SEARCH_MAX      = 90000;  // ← 30 ث (كان 45) → انتقال أسرع لـ T3_ARAB
 var T_MATCHED_GRACE   = 3000;   // ← 3  ث (كان 5)  → تأكيد أسرع للمباراة
 var T_DNS_TTL         = 30000;  // 30 ث (بدون تغيير)
 var T_CLASSIFY_TTL    = 20000;  // ← NEW v4.1: 20 ث صلاحية كاش التصنيف
@@ -188,7 +188,7 @@ function computeScore(haystack, weights) {
   return score;
 }
 
-var THRESHOLD = 9;
+var THRESHOLD = 12;
 
 // ← NEW v4.1: classifyTraffic مع كاش لتجنب إعادة الحساب
 function classifyTraffic(url, host) {
