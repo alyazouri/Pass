@@ -56,11 +56,11 @@ var SESSION = {
 // ─────────────────────────────────────────────
 //  §3  TIMEOUTS & THRESHOLDS
 // ─────────────────────────────────────────────
-var T_SESSION_IDLE  = 90000;
+var T_SESSION_IDLE  = 10000;
 var T_SEARCH_MAX    = 90000;
-var T_DNS_TTL       = 30000;
-var T_CLASSIFY_TTL  = 20000;
-var T_PROXY_DEAD    = 15000;
+var T_DNS_TTL       = 45000;
+var T_CLASSIFY_TTL  = 10000;
+var T_PROXY_DEAD    = 10000;
 
 var THRESHOLD         = 12;
 var MATCH_SCORE_FAST  = 18;
